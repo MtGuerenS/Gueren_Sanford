@@ -3236,6 +3236,7 @@ input, select, textarea {
 		color: #636363;
 		position: absolute;
 		width: 64em;
+		height: 4em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
@@ -3278,6 +3279,32 @@ input, select, textarea {
 			padding-top: 4.25em;
 		}
 
+		#nav .about
+		{
+			width: 30%;
+			text-align: center;
+			padding: 0 0 0 0;
+		}
+
+		#nav .top
+		{
+			height: 1px;
+		}
+
+		#nav .name
+		{
+			font-size: 120%;
+			padding: 0 0 0 5%;
+			vertical-align: 40%;
+		}
+
+		#nav .bar
+		{
+			position: absolute;
+			right: 2em;
+			width: 70%;
+		}
+
 		#nav ul {
 			margin: 0;
 			padding: 0;
@@ -3295,10 +3322,11 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
-				#nav ul li.name{
-				font-size: 120%;
-				padding: 0 5% 0 0;
-				}
+			#nav ul li.name
+		{
+			font-size: 120%;
+			padding: 0 5% 0 0;
+		}
 
 				#nav ul li a {
 					-moz-transition: font-size 0.2s ease;
