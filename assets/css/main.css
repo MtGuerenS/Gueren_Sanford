@@ -2448,6 +2448,40 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
+	  	ul.dashed {
+			list-style-type: none;
+			margin: 0;
+			padding-left: 0em;
+	  	}
+
+	  	ul.dashed > li {
+			text-indent: -5px;
+			width: 100%;
+			position: relative;
+			left: -2em;
+			top: -1em
+	  	}
+
+		@media screen and (max-width: 736px)
+		{
+			ul.dashed 
+			{
+				margin-bottom: 2em;
+			}
+
+			ul.dashed > li
+			{
+				position: relative;
+				left: 0em;
+				margin-bottom: -2em;
+			}
+		}
+
+	  	ul.dashed > li:before {
+			content: "-";
+			text-indent: -5px;
+	  	}
+
 		ul li {
 			padding-left: 0.5em;
 		}
