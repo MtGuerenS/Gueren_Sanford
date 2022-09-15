@@ -2258,7 +2258,6 @@ input, select, textarea {
 		justify-content: right;
 		text-align: center;
 		width: 50%;
-		background-color: #5f4d9340;
 	}
 
 	#projects h3
@@ -2272,6 +2271,13 @@ input, select, textarea {
 		font-size: 1.2em;
 	}
 	
+	@media screen and (min-width: 1000px)
+	{
+		#projects .projects-right
+		{
+			background-color: #5f4d9330;
+		}
+	}
 
 	@media screen and (max-width: 736px) {
 
@@ -2314,16 +2320,16 @@ input, select, textarea {
 
 		#projects .image1
 		{
-			padding-top: 0;
-			margin-top: 0;
-			position: relative;
-			text-align: center;
-			right: -15%;
+			padding: 0;
+			margin: 0 0 1em 0;
+			margin-left: calc(50% - 112px);
+			background-position: center;
 		}
 
 		#projects .projects-right
 		{
 			width: 100%;
+			margin: 0 5% 0 5%;
 		}
 
 	}
@@ -2784,6 +2790,8 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		text-align: center;
+		
 	}
 
 		ul.icons li {
@@ -3938,7 +3946,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3em 2em 1em 2em ;
+				padding: 0em 2em 1em 2em ;
 			}
 
 		}
