@@ -2218,6 +2218,60 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5) !important;
 	}
 
+/* Projects */
+
+	.in-line
+	{
+		display: flex;
+		border: solid 1px;
+		background-color: #dddddd60;
+		border-color: #dddddd;
+		padding: 2em 0 2em 0;
+		border-radius: 12px;
+
+	}
+
+	#projects .image1{
+		width: 240px;
+		height: 238px;
+		margin: 0 5% 0 5%;
+		background-image: url("../../images/CookieCalc.png");
+		background-size: 240px;
+		border-radius: 5px;
+	}
+
+		#projects .image1:hover
+		{
+			-moz-transition: opacity .3s ease-in, -moz-transform .1s ease-in-out;			/* Controls the grow time*/
+			-webkit-transition: opacity .3s ease-in, -webkit-transform .1s ease-in-out;
+			-ms-transition: opacity .3s ease-in, -ms-transform .1s ease-in-out;
+			transition: opacity .3s ease-in, transform .1s ease-in-out;
+			-moz-transform: scale(1.02);						/* Controls the grow size*/
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
+			opacity: 0.9;
+		}
+
+	.projects-right
+	{
+		text-align: center;
+		width: 50%;
+		margin: 0 0 0 0;
+	}
+
+	#projects h3
+	{
+		font-size: 1.4em;
+		padding: 1em 1em 0em 1em;
+	}
+
+	#projects p
+	{
+		font-size: 1.2em;
+	}
+
+
 /* Icon */
 
 	.icon {
