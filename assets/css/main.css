@@ -2255,9 +2255,10 @@ input, select, textarea {
 
 	.projects-right
 	{
+		justify-content: right;
 		text-align: center;
 		width: 50%;
-		margin: 0 0 0 0;
+		background-color: #5f4d9340;
 	}
 
 	#projects h3
@@ -2269,6 +2270,62 @@ input, select, textarea {
 	#projects p
 	{
 		font-size: 1.2em;
+	}
+	
+
+	@media screen and (max-width: 736px) {
+
+		#projects .image1
+		{
+			width: 200px;
+			height: 198px;
+			background-size: 200px;
+			margin-top: 1em;
+		}
+
+		#projects .projects-right
+		{
+			padding-right: 1.5em;
+			width: 50%;
+		}
+
+		#projects h3
+		{
+			font-size: 1.3em;
+			padding: 0em 1em 0em 1em;
+		}
+
+		#projects p
+		{
+			font-size: 1.1em;
+		}
+
+		.in-line
+		{
+			padding: 2em 0 0em 0;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+
+		.in-line{
+			flex-wrap: wrap;
+		}
+
+		#projects .image1
+		{
+			padding-top: 0;
+			margin-top: 0;
+			position: relative;
+			text-align: center;
+			right: -15%;
+		}
+
+		#projects .projects-right
+		{
+			width: 100%;
+		}
+
 	}
 
 
