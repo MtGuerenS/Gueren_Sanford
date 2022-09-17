@@ -2275,7 +2275,7 @@ input, select, textarea {
 	{
 		#projects .projects-right
 		{
-			background-color: #5f4d9330;
+			width: calc(-10% - 240px + 95%);
 		}
 	}
 
@@ -3897,19 +3897,18 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
-		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		padding: 2em 5em 0em 5em ;
+		width: calc(100%);
+		margin: 0 0 1em 0em;
 	}
 
 		#footer > * {
-			width: calc(50% - 2em);
-			margin-left: 2em;
+			width: 100%;
 		}
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
+			margin: -1em 0 0 0;
 			font-size: 0.8em;
 			text-align: center;
 		}
@@ -3917,7 +3916,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 2em 0em 0em 0em ;
 			}
 
 		}
@@ -3925,20 +3924,20 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 3em 2em 3em ;
+				padding: 3em 0em 2em 0em ;
 				display: block;
-				margin: 0 0 3em 0;
+				margin: 0;
 				width: 100%;
 			}
 
 				#footer > * {
 					width: 100%;
 					margin-left: 0;
-					margin-bottom: 3em;
+					margin-bottom: 0em;
 				}
 
 				#footer .copyright {
-					text-align: left;
+					text-align: center;
 				}
 
 		}
@@ -3946,7 +3945,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 0em 2em 1em 2em ;
+				padding: 2em 2em 1em 2em ;
 			}
 
 		}
@@ -3954,15 +3953,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#footer {
-				padding: 3em 1.5em 1em 1.5em ;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#footer {
-				padding: 2.5em 1em 0.5em 1em ;
+				padding: 3em 1.5em 1.5em 1.5em ;
 			}
 
 		}
