@@ -103,8 +103,8 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	}
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #5d235f4d 15%, #431257a9 85%);
+	}																									
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -2231,6 +2231,17 @@ input, select, textarea {
 
 	}
 
+	#projects h3
+	{
+		font-size: 1.4em;
+		padding: 1em 1em 0em 1em;
+	}
+
+	#projects p
+	{
+		font-size: 1.2em;
+	}
+
 	#projects .image1{
 		width: 240px;
 		height: 238px;
@@ -2260,16 +2271,31 @@ input, select, textarea {
 		width: 50%;
 	}
 
-	#projects h3
+	#projects .skills h3
 	{
-		font-size: 1.4em;
-		padding: 1em 1em 0em 1em;
+		font-size: 1.6em;
 	}
 
-	#projects p
+	#projects .skills ul
 	{
-		font-size: 1.2em;
+		display:inline-flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: center;
+		margin-bottom: -2em;
 	}
+
+		#projects .skills ul li
+		{
+			margin: 0 .5em 0 .5em;
+			display: block;
+		}
+
+			#projects .skills ul li p
+			{
+				margin: 0 .5em 0 .5em;
+				vertical-align: middle;
+			}
 	
 	@media screen and (min-width: 1000px)
 	{
@@ -2310,6 +2336,23 @@ input, select, textarea {
 		{
 			padding: 2em 0 0em 0;
 		}
+
+		#projects .skills h3
+		{
+			padding-top: 1em;
+			font-size: 1.5em;
+		}
+
+		#projects .skills ul
+		{
+			margin: 0;
+		}
+
+			#projects .skills ul li .lang
+			{
+				width: 72px;
+				height: 72px;
+			}
 	}
 
 	@media screen and (max-width: 600px) {
@@ -2322,7 +2365,7 @@ input, select, textarea {
 		{
 			padding: 0;
 			margin: 0 0 1em 0;
-			margin-left: calc(50% - 112px);
+			margin-left: calc(50% - 100px);
 			background-position: center;
 		}
 
@@ -2330,10 +2373,26 @@ input, select, textarea {
 		{
 			width: 100%;
 			margin: 0 5% 0 5%;
+			padding-right: 0;
 		}
 
 	}
 
+	@media screen and (max-width: 400px) {
+		
+		#projects .skills h3
+		{
+			font-size: 1.3em;
+		}
+
+		#projects .skills ul li .lang
+		{
+			width: 48px;
+			height: 48px;
+		}
+
+
+	}
 
 /* Icon */
 
@@ -3396,7 +3455,7 @@ input, select, textarea {
 		height: 4em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: #f7f7f7; /*dark mode*/
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
