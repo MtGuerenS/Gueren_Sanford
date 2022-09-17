@@ -3500,31 +3500,33 @@ input, select, textarea {
 			width: 30%;
 			text-align: center;
 			padding: 0 0 0 0;
+			background-color: #5f4d9325;
 		}
 
 		#nav .top
 		{
-			height: 1px;
+			height: 1x;
 		}
 
-		#nav .name
+		/*#nav .name
 		{
 			font-size: 120%;
 			padding: 0 0 0 5%;
 			vertical-align: 40%;
-		}
+		}*/
 
 		#nav .bar
 		{
 			position: absolute;
-			right: 2em;
-			width: 70%;
+			right: 0em;
+			width: 100%; /* was 70 */
 		}
 
 		#nav ul {
 			margin: 0;
 			padding: 0;
 			list-style: none;
+			text-align: left;
 		}
 
 			#nav ul li {
@@ -3533,15 +3535,25 @@ input, select, textarea {
 				-ms-transition: margin 0.2s ease;
 				transition: margin 0.2s ease;
 				display: inline-block;
-				margin: 0 0.35em;
-				padding: 0;
+				margin: 0 0em;
+				padding-right: 0;
 				vertical-align: middle;
 			}
 
 			#nav ul li.name
 		{
 			font-size: 120%;
-			padding: 0 5% 0 0;
+			padding-left: 2em;
+			width: 30%;
+			text-align: center;
+		}
+
+		#nav ul li.others
+		{
+			min-width: 110px;
+			width: calc(((100% - (30% + 3em))/4));
+			text-align: center;
+			font-size: .91em;
 		}
 
 				#nav ul li a {
@@ -3570,7 +3582,7 @@ input, select, textarea {
 		#nav.alt {
 			position: fixed;
 			top: 0;
-			padding: 0.5em 1em;
+			padding: 1em;
 			background-color: rgba(247, 247, 247, 0.95);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
@@ -3578,7 +3590,7 @@ input, select, textarea {
 		}
 
 			#nav.alt ul li {
-				margin: 0 0.175em;
+				margin: 0;
 			}
 
 				#nav.alt ul li a {
