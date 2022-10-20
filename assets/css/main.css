@@ -2228,7 +2228,7 @@ input, select, textarea {
 		border-color: #dddddd;
 		padding: 2em 0 2em 0;
 		border-radius: 12px;
-
+		margin: 3em 0 3em 0;
 	}
 
 	#projects h3
@@ -2242,33 +2242,12 @@ input, select, textarea {
 		font-size: 1.2em;
 	}
 
-	#projects .image1{
-		width: 240px;
-		height: 238px;
-		margin: 0 5% 0 5%;
-		background-image: url("../../images/CookieCalc.png");
-		background-size: 240px;
-		border-radius: 5px;
-	}
-
-		#projects .image1:hover
-		{
-			-moz-transition: opacity .3s ease-in, -moz-transform .1s ease-in-out;			/* Controls the grow time*/
-			-webkit-transition: opacity .3s ease-in, -webkit-transform .1s ease-in-out;
-			-ms-transition: opacity .3s ease-in, -ms-transform .1s ease-in-out;
-			transition: opacity .3s ease-in, transform .1s ease-in-out;
-			-moz-transform: scale(1.02);						/* Controls the grow size*/
-			-webkit-transform: scale(1.02);
-			-ms-transform: scale(1.02);
-			transform: scale(1.02);
-			opacity: 0.9;
-		}
-
 	.projects-right
 	{
 		justify-content: right;
 		text-align: center;
 		width: 50%;
+		padding-right: 1.5em;
 	}
 
 	#projects .skills h3
@@ -2296,6 +2275,28 @@ input, select, textarea {
 				margin: 0 .5em 0 .5em;
 				vertical-align: middle;
 			}
+
+	#projects .image 
+	{
+		width: 240px;
+		height: 238px;
+		margin: 0 5% 0 5%;
+		background-size: 240px;
+		border-radius: 5px;
+	}
+
+		#projects .image:hover
+		{
+			-moz-transition: opacity .3s ease-in, -moz-transform .1s ease-in-out;			/* Controls the grow time*/
+			-webkit-transition: opacity .3s ease-in, -webkit-transform .1s ease-in-out;
+			-ms-transition: opacity .3s ease-in, -ms-transform .1s ease-in-out;
+			transition: opacity .3s ease-in, transform .1s ease-in-out;
+			-moz-transform: scale(1.02);						/* Controls the grow size*/
+			-webkit-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+			transform: scale(1.02);
+			opacity: 0.9;
+	}
 	
 	@media screen and (min-width: 1000px)
 	{
@@ -2307,12 +2308,11 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-		#projects .image1
+		#projects .image
 		{
 			width: 200px;
 			height: 198px;
 			background-size: 200px;
-			margin-top: 1em;
 		}
 
 		#projects .projects-right
@@ -2335,6 +2335,7 @@ input, select, textarea {
 		.in-line
 		{
 			padding: 2em 0 0em 0;
+			margin: 3em 0 3em 0;
 		}
 
 		#projects .skills h3
@@ -2361,7 +2362,7 @@ input, select, textarea {
 			flex-wrap: wrap;
 		}
 
-		#projects .image1
+		#projects .image
 		{
 			padding: 0;
 			margin: 0 0 1em 0;
